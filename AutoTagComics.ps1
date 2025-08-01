@@ -3,9 +3,9 @@
 # Renaming template: {series} Vol.{volume} #{issue} ({year}) - Excludes volume if missing
 
 # === CONFIGURATION SECTION ===
-$watchFolder = "C:\Users\lemck\Comics\Auto Add"  # Directory to monitor
-$comictagger = "C:\Comictagger\comictagger.exe"  # Path to Comictagger
-$logFile = "C:\Comictagger\Logs\Comictagger.log"  # Log file (create folder first)
+$watchFolder = "C:\path\to\comics"  # Directory to monitor
+$comictagger = "C:\path\to\comictagger.exe"  # Path to Comictagger
+$logFile = "C:\path\to\logs\Comictagger.log"  # Log file (create folder first)
 
 # === FILE SYSTEM WATCHER SETUP ===
 $watcher = New-Object System.IO.FileSystemWatcher
