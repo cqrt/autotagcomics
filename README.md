@@ -2,13 +2,16 @@ Comic Auto-Tagger and Renamer Script for Windows
 
 Monitors a directory, tags new comics with metadata, and renames them
 
-Renaming template: {series} Vol.{volume} #{issue} ({year}) - Excludes volume if missing
+If metadata is not found, it will queue the file and retry every hour
+
+Renaming template: {series} Vol.{volume} #{issue} ({year}) - Excludes volume if missing from metadata
 
 CONFIGURATION
 
-$watchFolder = "C:\path\to\comics"  # Directory to monitor
+$WatchDirectory = "C:\path\to\comics"  # Directory to monitor
 
-$comictagger = "C:\path\to\comictagger.exe"  # Path to Comictagger
+$ComicTaggerPath = "C:\path\to\comictagger.exe"  # Path to Comictagger
 
-$logFile = "C:\path\to\logs\Comictagger.log"  # Log file (create folder first)
-$RetryInterval = 1200 # in seconds
+$LogFilePath = "C:\path\to\logs\Comictagger.log"  # Log file (create folder first)
+
+$RetryInterval = 3600 # in seconds
