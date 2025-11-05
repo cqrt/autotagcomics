@@ -2,9 +2,9 @@
 # Monitors a directory for new CBZ files, tags them with ComicTagger, modifies metadata, and renames them
 
 # Configuration - Built-in parameters
-$WatchDirectory = "C:\Users\lemck\Comics\Auto Add"
-$ComicTaggerPath = "C:\Comictagger\comictagger.exe"
-$LogFilePath = "C:\Comictagger\Logs\Comictagger.log"
+$WatchDirectory = "C:\path\to\comic\directory"
+$ComicTaggerPath = "C:\path\to\comictagger.exe"
+$LogFilePath = "C:\path\to\log\file"
 $RetryInterval = 1200  # 5 minutes in seconds
 
 # Global variables
@@ -456,3 +456,4 @@ function Start-CBZMonitoring {
 
 # Start the monitoring
 Start-CBZMonitoring
+
